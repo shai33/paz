@@ -36,23 +36,23 @@ nav li {
     display: inline;
     
   }
-  .container2{
+.container-main, .container-cubes{
     display: flex;
     flex-direction: row;
     justify-content: center;
     /*border: 1px solid lightgray;*/
 }
-.container2 .fe{
+.container-main .main-elem{
     margin-top: 30px;
     margin-left: 13px;
     position: relative;
     
     /*width: 40px;*/
 }
-.bg{
+.main-img{
     border-bottom-right-radius: 25px;
 }
-.text-fe{
+.main-text{
     position: absolute;
     bottom: 5px;
     color: white;
@@ -64,4 +64,48 @@ nav li {
     padding: 5px;
     font-size: 14px;
     line-height: 1;
+}
+.container-cubes .cube{
+    margin-top: 15px;
+    margin-left: 13px;
+    position: relative;
+    border: 2px solid lightgray;
+    font-size: 14px;
+    padding-right: 20px;
+    padding-top: 5px;
+    /*padding-bottom: 5px;*/
+    padding-left: 15px;
+    border-top-right-radius: 25px;
+    background-color: whitesmoke;
+    width: 290px;
+}
+.cube h3{
+    /*margin-top: 5px;*/
+    margin-left: 13px;
+    position: relative;
+    border-bottom: 2px solid lightgray;
+    font-size: 14px;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+    color: #575757;
+    font-weight: bold;
+}
+.cube a{
+    float: left;
+    color: #72716d;
+    font-size: 13px;
+    padding-left: 12px;
+    margin-top: 20px;
+}
+.cube .map{
+    float: left;
+}
+.cube-text{
+    float: right;
+    display: flex;
+    flex-direction: column;
+    
+}
+.cube-text a{
+    margin-top: 5px;
 }
