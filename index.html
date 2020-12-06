@@ -9,19 +9,34 @@
 <body>
     <div class="container-header">
         <div class="header">
-            <a class="logo" href="https://web.archive.org/web/20170702073345/http://www.paz.co.il/"></a>
+            <div>
+                <a class="logo" href="https://web.archive.org/web/20170702073345/http://www.paz.co.il/">
+                    <img src="images/paz_logo.png" alt="paz logo"></a>
+            </div>
             <div id="searchBox">
                 <div class="input">
                     <input name="searchBox" type="text" value="רשום מילת חיפוש">
+                    <img src="images/search_button.png" alt="search icon">
                 </div>
                 <a href="https://web.archive.org/web/20170702073345/http://www.paz.co.il/#">&nbsp;&nbsp;</a>
+                <div class="lang">
+                    <a href="https://web.archive.org/web/20170702073345/http://www.paz.co.il/index.aspx?id=4424">English</a> 
+                </div>
             </div>
-            <nav>
+            <nav class="main-menu">
                 <ul>
                     <li><a href="https://web.archive.org/web/20170702073345/http://www.paz.co.il/" class="home">
                         <img src="images/menu_home_blue.png" alt="home icon"></a></li>
                     <li class="sep"><img src="images/menu_sep.png" alt="menu separator"></li>
-                    <li>אודות</li>
+                    <div class="dropdown">
+                        <li><a href="#">אודות</a></li>
+                        <nav class="dropdown-menu">
+                            <ul>
+                                <li><a href="#">אודות</a></li>
+                                <li><a href="#">היסטוריה</a></li>
+                            </ul>
+                        </nav>
+                    </div>
                     <li class="sep"><img src="images/menu_sep.png" alt="menu separator"></li>
                     <li>חטיבות</li>
                     <li class="sep"><img src="images/menu_sep.png" alt="menu separator"></li>

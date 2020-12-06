@@ -9,19 +9,20 @@ body {
     padding-bottom: 38px;
     background: #fff url(header_bg.png) repeat-x center top;
 }
+.container-header{
+    display: flex;
+}
 .header {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    flex-wrap: wrap;
     width: 100%;
     height: 105px;
     background: gray;
     position: relative;
 }
 
-.header > nav {
-    display: flex;
+.header > .main-menu {
     width: 100%;
     height: 105px;
     background: gray;
@@ -30,21 +31,59 @@ body {
     font-weight: bold;
     height: 33px;
     position: relative;
-    top: 62px;
-    margin: 0 327px 0 0;
-  }
-nav ul > li{
+    top: 64px;
+    margin: 0 324px 0 0;
+}
+.main-menu > ul{
+    padding: 0;
+    list-style: none;
+}
+.main-menu ul li{
     color: white;
-    margin: 7px;
+    margin: 8px;
     height: 100%;
     float: right;
     position: relative;
     display: block;
-    
 }
-nav li a.home{
+.dropdown li > a{
+    text-decoration: none;
+    white-space: nowrap;
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 5px 0;
+    right: 0px;
+}
+.main-menu li a.home{
     width: 17px;
     background-position: -17px top;
+}
+.dropdown-menu{
+    display: none;
+    background-color:gray;
+    width: 100px;
+    top: 30px;
+    right: 58px;
+    position: absolute;
+    z-index: 200;
+    
+}
+.dropdown-menu ul li{
+    color: white;
+    margin: 2px;
+    border-bottom: 1px solid lightgray;
+    padding: 0;
+    list-style: none;
+}
+.dropdown-menu ul{
+    padding: 0;
+}
+.dropdown:hover > .dropdown-menu{
+    display: block;
+}
+a:visited{
+    color: white
 }
 .logo {
     display: flex;
@@ -53,26 +92,32 @@ nav li a.home{
     position: absolute;
     bottom: -20px;
     right: 190px;
-    background: url(images/paz_logo.png) no-repeat 0 0;
+    
 }
 #searchBox {
     display: flex;
-    float: right;
     position: absolute;
     top: 20px;
-    left: 220px;
+    left: 230px;
     width: 196px;
     border: 1px solid lightgray;
     border-top-right-radius: 10px;
-    background: url(images/search_button.png) no-repeat 0 0;
     
 }
 #searchBox .input {
     display: flex;
     width: 180px;
     height: 19px;
-
-    
+}
+.lang a{
+    display: flex;
+    position: absolute;
+    top: 2px;
+    left: 210px;
+    font-size: 12px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
 }
 .container-main, .container-cubes{
     display: flex;
