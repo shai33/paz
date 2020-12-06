@@ -11,10 +11,15 @@ body {
 }
 .header {
     display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
     width: 100%;
     height: 105px;
     background: gray;
+    position: relative;
 }
+
 .header > nav {
     display: flex;
     width: 100%;
@@ -25,17 +30,50 @@ body {
     font-weight: bold;
     height: 33px;
     position: relative;
-    top: 72px;
-    margin: 0 143px 0 0;
+    top: 62px;
+    margin: 0 327px 0 0;
   }
 nav ul > li{
     color: white;
-    margin: 10px;
-}
-nav li {
-    display: inline;
+    margin: 7px;
+    height: 100%;
+    float: right;
+    position: relative;
+    display: block;
     
-  }
+}
+nav li a.home{
+    width: 17px;
+    background-position: -17px top;
+}
+.logo {
+    display: flex;
+    width: 142px;
+    height: 93px;
+    position: absolute;
+    bottom: -20px;
+    right: 190px;
+    background: url(images/paz_logo.png) no-repeat 0 0;
+}
+#searchBox {
+    display: flex;
+    float: right;
+    position: absolute;
+    top: 20px;
+    left: 220px;
+    width: 196px;
+    border: 1px solid lightgray;
+    border-top-right-radius: 10px;
+    background: url(images/search_button.png) no-repeat 0 0;
+    
+}
+#searchBox .input {
+    display: flex;
+    width: 180px;
+    height: 19px;
+
+    
+}
 .container-main, .container-cubes{
     display: flex;
     flex-direction: row;
