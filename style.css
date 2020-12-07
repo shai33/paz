@@ -7,15 +7,8 @@ body {
     text-align: right;
     font-family: 'Arial (Hebrew)', Arial;
     padding-bottom: 38px;
-    background: #fff url(header_bg.png) repeat-x center top;
-}
-.container-header{
-    display: flex;
 }
 .header {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
     width: 100%;
     height: 105px;
     background: gray;
@@ -23,7 +16,6 @@ body {
 }
 
 .header > .main-menu {
-    width: 100%;
     height: 105px;
     background: gray;
     color: #fff;
@@ -43,8 +35,9 @@ body {
     margin: 8px;
     height: 100%;
     float: right;
-    position: relative;
+    /*position: relative;*/
     display: block;
+    
 }
 .dropdown li > a{
     text-decoration: none;
@@ -55,6 +48,10 @@ body {
     padding: 5px 0;
     right: 0px;
 }
+.dropdown{
+    position: relative;
+    display: inline-block;
+}
 .main-menu li a.home{
     width: 17px;
     background-position: -17px top;
@@ -62,19 +59,25 @@ body {
 .dropdown-menu{
     display: none;
     background-color:gray;
-    width: 100px;
+    width: fit-content;
     top: 30px;
-    right: 58px;
+    right: 30px;
     position: absolute;
     z-index: 200;
-    
+    overflow: hidden;
+    margin-top: 10px;
+}
+.dropdown-menu li > a{
+    display: block;
+    padding: 3px;
 }
 .dropdown-menu ul li{
     color: white;
-    margin: 2px;
+    margin: 1px;
     border-bottom: 1px solid lightgray;
-    padding: 0;
+    padding-right: 3px;
     list-style: none;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
 .dropdown-menu ul{
     padding: 0;
@@ -84,6 +87,9 @@ body {
 }
 a:visited{
     color: white
+}
+.dropdown-menu li:hover {
+    background-color: #ddd;
 }
 .logo {
     display: flex;
@@ -98,22 +104,35 @@ a:visited{
     display: flex;
     position: absolute;
     top: 20px;
-    left: 230px;
-    width: 196px;
+    left: 250px;
+    width: 140px;
     border: 1px solid lightgray;
     border-top-right-radius: 10px;
-    
+    background-color: white;
+    height: 21px;
 }
 #searchBox .input {
     display: flex;
-    width: 180px;
-    height: 19px;
+    width: 140px;
+    height: 20px;
+    padding-right: 5px;
+    background-color: white;
+    border-top-right-radius: 10px;
+    
+}
+#searchBox .input > input{
+    display: flex;
+    width: 150px;
+    height: 20px;
+    right: 33px;
+    font-size: 12px;
+    border: none
 }
 .lang a{
     display: flex;
     position: absolute;
     top: 2px;
-    left: 210px;
+    left: 160px;
     font-size: 12px;
     font-weight: bold;
     color: white;
