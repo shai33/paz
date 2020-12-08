@@ -7,6 +7,7 @@
 #sideMenu ul{
     border-top: 1px solid #dedede;
     margin-left: 22px;
+    padding-right: 0px;
 }
 #sideMenu ul li {
     display: block;
@@ -29,6 +30,9 @@
     top: 1px;
     padding-right: 15px;
     position: absolute;
+}
+.contacts-section{
+    margin-left: 24px;
 }
 .page-route {
     font-size: 12px;
@@ -53,7 +57,7 @@ h1 {
     border-width: 1px;
     border-color: #CCCCCC;
     width: 377px;
-    min-height: 332px;
+    min-height: 362px;
     padding: 12px 18px;
     border-top-right-radius: 25px;
     background-color: rgb(248, 244, 248);
@@ -106,5 +110,44 @@ h1 {
     margin-top: -18px
 }
 .form-fields a{
+    text-decoration: none;
+    float: left;
+    margin-left: 50px;
+    font-size: 14px;
+}
+.form-fields a > .text{
+    background-color: rgb(69, 136, 190);
+    padding: 2px 8px;
+    border-top-right-radius: 4px;
+}
+.side-cubes {
     
+    width: 292px;
+    margin-top: 40px;
+}
+.cube {
+    width: 300px;
+    height: 180px;
+    margin-top: 20px;
+    padding: 18px 22px 15px;
+    border-style: solid solid none solid;
+    border-width: 1px;
+    border-color: #CCCCCC;
+    border-top-right-radius: 25px;
+    background-color: rgb(248, 244, 248);
+}
+.cube h3{
+    font-size: 15px;
+    font-weight: bold;
+    color: #005ca0;
+    margin-bottom: 10px;
+}
+.cube-content{
+    font-size: 13px;
+    color: #6d6d6d;
+}
+.cube-content a{
+    text-decoration: none;
+    float: none;
+    color: mediumblue;
 }

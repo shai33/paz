@@ -162,9 +162,25 @@ a:visited{
     margin-right: 7px;
     margin-bottom: 5px;
     border-bottom-right-radius: 25px;
-    padding: 5px;
-    font-size: 14px;
+    padding: 10px;
     line-height: 1;
+}
+.main-text h3{
+    font-size: 14px;
+    font-weight: bold;
+}
+.main-text p{
+    font-size: 13px;
+    margin-top: 4px;
+}
+.main-text a{
+    float: left;
+    color: #fff;
+    position: relative;
+    font-size: 13px;
+}
+.main-text img{
+    margin-right: 3px;
 }
 .container-cubes .cube{
     margin-top: 15px;
