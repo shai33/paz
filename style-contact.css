@@ -1,0 +1,110 @@
+.container-contact{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 32px;
+}
+#sideMenu ul{
+    border-top: 1px solid #dedede;
+    margin-left: 22px;
+}
+#sideMenu ul li {
+    display: block;
+    width: 122px;
+    min-height: 36px;
+    position: relative;
+}
+#sideMenu ul li a{
+    display: block;
+    width: 120px;
+    height: 36px;
+    overflow: hidden;
+    font-size: 13px;
+    margin-bottom: 4px;
+    color: #5c5c5c;
+    line-height: 32px;
+    
+}
+#sideMenu span{
+    top: 1px;
+    padding-right: 15px;
+    position: absolute;
+}
+.page-route {
+    font-size: 12px;
+    color: #5c5c5c;
+    margin-bottom: 25px;
+}
+.page-route a{
+    color: #5c5c5c;
+    text-decoration: none;
+}
+h1 {
+    font-size: 15px;
+    font-weight: bold;
+    border-bottom: 1px solid #cbcbcb;
+    margin-bottom: 12px;
+    padding-bottom: 4px;
+    color: #72716d;
+    width: 440px;
+}
+.form-container{
+    border-style: solid solid none solid;
+    border-width: 1px;
+    border-color: #CCCCCC;
+    width: 377px;
+    min-height: 332px;
+    padding: 12px 18px;
+    border-top-right-radius: 25px;
+    background-color: rgb(248, 244, 248);
+}
+.form-container h2{
+    color: #005ca0;
+    font-weight: bold;
+    font-size: 15px;
+}
+.form-container .note{
+    display: block;
+    color: #6d6d6d;
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 1.2;
+    margin: 5px 0;
+}
+.form-container .instructions{
+    font-size: 12px;
+}
+.form-fields{
+    width: 245px;
+    margin: 10px auto 0;
+    display: inline;
+}
+.form-fields .f-line{
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+.form-fields .f-line label{
+    color: #6d6d6d;
+    display: inline-block;
+    width: 75px;
+    text-align: right;
+    margin-right: 50px;
+    font-size: 12px;
+}
+.form-fields .f-line input{
+    width: 160px;
+    padding: 3px;
+    border: 1px solid #808992;
+}
+.form-fields .f-line textarea{
+    color: #6d6d6d;
+    width: 239px;
+    height: 100px;
+    padding: 3px;
+    border: 1px solid #808992;
+    margin-right: 50px;
+    margin-top: -18px
+}
+.form-fields a{
+    
+}

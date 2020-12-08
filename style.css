@@ -220,7 +220,6 @@ a:visited{
     z-index: 999;
     bottom: 0px;
     background-color: gray;
-
 }
 .container-footer nav{
     width: 1000px;
@@ -228,7 +227,6 @@ a:visited{
     margin: auto;
     font-size: 14px;
     margin-top: 16px;
-    
 }
 .container-footer ul{
     list-style: none;
